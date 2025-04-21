@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    gap: 30px;
+}
+
+.headerleft {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 24px 30px;
+    border-right: 1px solid #ccc;
+}
+
+.address {
+    padding: 20px 30px;
+
+}
+
+.address h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.address p {
+    font-size: 14px;
+}
+
+.headersearch {
+    flex-grow: 1;
+    background-color: #f8f8f8;
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid #f4f4f4;
+}
+
+.headersearch input {
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+}
+
+.headersearch button {
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+}
+
+.headersearch input:focus {
+    outline: none;
+}
+
+.headerright {
+    display: flex;
+    gap: 40px;
+    margin-right: 40px;
+}
+
+.headerright button {
+    font-size: 16px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.headerright button:first-child {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(43, 13, 190);
+}
+
+.headerright button:last-child {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: rgb(12, 131, 31);
+
+}
+
+.banner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.orderbanner {
+    max-width: 1280px;
+    display: flex;
+    margin: auto;
+}
+
+.orderitem {
+    flex-basis: 27%;
+    margin: 1%;
+
+}
+
+.orderitem img {
+    width: 100%;
+}
+
+.category {
+    max-width: 1280px;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.categoryitem {
+    flex-basis: 10%;
+}
+
+.categoryitem img {
+    width: 100%;
+
+}
+
+.headingrow {
+    margin: 30px;
+    margin-top: 15px;
+}
+
+
+.headingrow h2 {
+    font-size: 25px;
+
+}
+
+.product {
+    max-width: 1280px;
+    margin: auto;
+    padding: 30px;
+    padding-top: 0px;
+
+}
+
+
+.productrow {
+    width: 100%;
+
+    margin: 30px 0px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+
+}
+
+.productitem {
+    flex-basis: 15%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 2px #ccc;
+    border: 1px solid #ccc;
+}
+
+.productimg {
+
+    text-align: center;
+    padding: 15px;
+}
+
+.productimg p {
+    background-color: #f8f8f8;
+    display: flex;
+    width: 60px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.productcontent {
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.productcontent h3 {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+
+.productcontent p {
+    font-size: 15px;
+    color: #666666;
+}
+
+
+.btninside {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btninside button {
+    background-color: #f7fff9;
+    border: 2px solid #328839;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+
+
+/* for making responsive */
+
+@media only screen and (min-width:200px) and (max-width:575px) {
+
+
+    header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 10px;
+    }
+
+
+    .headerleft {
+        justify-content: center;
+    }
+
+
+    .logo {
+        padding: 10px;
+    }
+
+    .address {
+        padding: 10px;
+    }
+
+    .address p {
+        font-size: 14px;
+    }
+
+    .address h3 {
+        font-size: 15px;
+    }
+
+    .headersearch button {
+        padding: 10px;
+    }
+
+    .headerright {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        margin-right: 0;
+        justify-content: center;
+        bottom: 0;
+
+
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .orderbanner {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .categoryitem {
+        flex-basis: 25%;
+    }
+
+    .productitem {
+        flex-basis: 48.9%;
+    }
+
+    .product {
+        padding: 30px 10px;
+        padding-top: 0px;
+    }
+
+    .productcontent h3 {
+        font-size: 20px;
+    }
+
+}
