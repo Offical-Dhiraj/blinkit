@@ -109,8 +109,8 @@ header {
 
 .banner img {
     width: 100%;
-    transition: 0.4s ease;
-}
+/*     transition: 0.4s ease;
+} */
 
 /*  .banner img :hover{
     background-color: #e70a0a;
